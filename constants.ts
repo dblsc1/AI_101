@@ -47,13 +47,9 @@ export const CURRICULUM_DATA: Domain[] = [
   },
   // {
   //   id: 'future-tech',
-  //   title: '前沿探索',
-  //   modules: [
-  //     { id: 'm13', name: '具身智能', description: '赋予AI物理载体，研究机器人如何在现实世界中感知、规划并执行任务。' },
-  //     { id: 'm14', name: '通用人工智能', description: '展望AGI的诞生，探讨系统如何在多领域展现出类人水平的学习与推理能力。' },
-  //     { id: 'm15', name: '量子计算协同', description: '探索量子比特如何为大模型训练提供指数级增长的算力支撑。' },
-  //     { id: 'm16', name: '人机共生', description: '研究脑机接口与穿戴设备，探索人类与AI深度融合的进化可能性。' },
-  //     { id: 'm4-extra', name: '神经形态计算', description: '模仿生物大脑的物理结构开发芯片，实现极低能耗的高性能智能计算。' }
-  //   ]
-  // }
+     title: '前沿探索',
+     modules: [
+       { id: 'm13', name: '敬请期待''敬请期待''jing'qin''qi'd'敬请期待},
+     ]
+   }
 ];
