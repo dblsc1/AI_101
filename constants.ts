@@ -45,8 +45,8 @@ export const CURRICULUM_DATA: Domain[] = [
       // { id: 'm3-extra', name: '金融风控建模', description: '利用AI实时监测交易风险，在毫秒级时间内识别并阻止欺诈行为。' }
     ]
   },
-  // {
-  //   id: 'future-tech',
+   {
+     id: 'future-tech',
      title: '前沿探索',
      modules: [
       { id: 'm11', name: '敬请期待', description: '敬请期待'},     
