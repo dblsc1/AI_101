@@ -49,7 +49,6 @@ export const CURRICULUM_DATA: Domain[] = [
   //   id: 'future-tech',
      title: '前沿探索',
      modules: [
-       { id: 'm13', name: '敬请期待''敬请期待''jing'qin''qi'd'敬请期待},
-     ]
+      { id: 'm11', name: '敬请期待', description: '敬请期待''jin     ]
    }
 ];
