@@ -9,10 +9,10 @@ interface Step {
 }
 
 const STEPS: Step[] = [
-  { id: 1, title: 'Explore the Galaxy', description: 'Scroll or swipe up/down to navigate through curriculum domains.', target: 'scroll' },
-  { id: 2, title: 'Access Modules', description: 'Click or hover on a domain bubble to reveal its specific knowledge modules.', target: 'expand' },
-  { id: 3, title: 'Build Your Registry', description: 'Use the "+" icon to add modules to your personalized learning queue.', target: 'add' },
-  { id: 4, title: 'Generate Report', description: 'Open the Data Core at the bottom right to analyze your selection across all grade tiers.', target: 'core' },
+  { id: 1, title: '探索星系探索', description: '上下滚动或滑动，在不同的课程领域之间导航。', target: 'scroll' },
+  { id: 2, title: '访问知识模块', description: '点击或悬停在领域气泡上，揭示具体的知识模块。', target: 'expand' },
+  { id: 3, title: '构建您的清单', description: '使用“+”图标将模块添加到您的个性化学习队列中。', target: 'add' },
+  { id: 4, title: '生成分析报告', description: '打开右下角的“数据核心”，分析您在所有学段的选择。', target: 'core' },
 ];
 
 const OnboardingGuide: React.FC<{ onClose: () => void }> = ({ onClose }) => {
@@ -44,13 +44,13 @@ const OnboardingGuide: React.FC<{ onClose: () => void }> = ({ onClose }) => {
           {step.target === 'scroll' && (
              <div className="flex flex-col items-center gap-2 animate-bounce">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" strokeWidth="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5" /></svg>
-                <span className="text-[8px] uppercase tracking-[0.3em] text-[#00d4ff]">Swipe Up/Down</span>
+                <span className="text-[8px] uppercase tracking-[0.3em] text-[#00d4ff]">上下滑动 Swipe Up/Down</span>
              </div>
           )}
           {step.target === 'expand' && (
              <div className="relative w-16 h-16 border-2 border-dashed border-[#00d4ff]/30 rounded-full animate-pulse flex items-center justify-center">
                 <div className="w-8 h-8 rounded-full bg-[#00d4ff]/20 border border-[#00d4ff]/40" />
-                <span className="absolute -bottom-6 text-[8px] uppercase tracking-[0.3em] text-[#00d4ff]">Click Bubble</span>
+                <span className="absolute -bottom-6 text-[8px] uppercase tracking-[0.3em] text-[#00d4ff]">点击气泡 Click Bubble</span>
              </div>
           )}
           {step.target === 'add' && (
@@ -72,7 +72,7 @@ const OnboardingGuide: React.FC<{ onClose: () => void }> = ({ onClose }) => {
           onClick={next}
           className="w-full py-4 rounded-2xl bg-[#00d4ff]/10 hover:bg-[#00d4ff] text-[#00d4ff] hover:text-black border border-[#00d4ff]/30 text-[9px] tracking-[0.5em] font-black uppercase transition-all duration-500"
         >
-          {currentStep === STEPS.length - 1 ? 'Start Exploration' : 'Next Step'}
+          {currentStep === STEPS.length - 1 ? '开始探索 Start Exploration' : '下一步 Next Step'}
         </button>
 
         <button 
